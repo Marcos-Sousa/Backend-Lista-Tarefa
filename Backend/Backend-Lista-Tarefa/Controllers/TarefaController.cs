@@ -26,6 +26,7 @@ namespace Backend_Lista_Tarefa.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IEnumerable<Tarefa>> BuscarTodas()
         {
             var response = await _tarefaRepositorio.BuscarTodas();
