@@ -66,7 +66,7 @@ namespace Backend_Lista_Tarefa.Manipuladores
                 if (tarefa != null)
                 {
                     _tarefaRepositorio.Deletar(tarefa);
-                    return new ComandoSaida(true, 200, tarefa);
+                    return new ComandoSaida(true, 200, null);
                 }
                 else
                 {

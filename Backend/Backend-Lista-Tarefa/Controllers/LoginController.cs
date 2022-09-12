@@ -16,7 +16,6 @@ namespace Backend_Lista_Tarefa.Controllers
             _configuration = configuration;
         }
         [HttpPost]
-        [Route("login")]
         public object Login([FromBody] ComandoManipuladorAutenticar comando)
         {
             var senha = _configuration["Usuario:Senha"];
